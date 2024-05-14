@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEsion administrador</title>
+    <script src="registro.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <section class="principal">
+        <div class="titulo interna">
+            <h1>Nombre</h1>
+            <div class="interna">
+                <label for="rol">Rol</label>
+                <select id="rol">
+                    <option value="admin">Administrador</option>
+                    <option value="usuario">Usuario</option>
+                </select>
+            </div>
+            <div class="interna">
+                <label for="user">Nombre</label>
+                <input type="text" id="user">
+            </div>
+            <div class="interna">
+                <label for="user">Apellido</label>
+                <input type="text" id="apellido">
+            </div>
+            <br>
+            <div class="interna">
+                <label for="pass">Contraseña</label>
+                <input id="password" type="password">
+            </div>
+            <div class="interna">
+                <label for="pass">Confirmar Contraseña</label>
+                <input id="confirm_password" type="password">
+            <br>
+            <div class="botones interna">
+                <button onclick="Admin()">Admin</button>
+                <button onclick="Usuario()">Usuario</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        function redirectToAdminPage() {
+            window.location.href = 'pagina_admin.html';
+        }
+    </script>
+</body>
+</html>

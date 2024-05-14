@@ -1,0 +1,49 @@
+/* Estilos para centrar el formulario en la pantalla */
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.interna {
+    width: 300px;
+    margin: auto;
+}
+
+.interna:not(:last-child) {
+    margin-bottom: 10px; 
+}
+.interna label {
+    display: block; /* Mostrar las etiquetas en una nueva línea */
+}
+
+.interna select,
+.interna input {
+    width: 100%; /* Llenar el ancho del contenedor */
+    box-sizing: border-box; /* Incluir el padding y border en el ancho */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botones {
+    margin-top: 20px; /* Espacio entre campos y botones */
+}
+
+.botones button {
+    padding: 10px 20px;
+    background-color: #2b1ea5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: #281092;
+}
